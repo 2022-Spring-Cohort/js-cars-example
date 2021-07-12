@@ -3,6 +3,7 @@ import {
     Car
 } from "/js/Car.js";
 
+const warnEvent = new Event('warnEvent');
 const newCar = new Car();
 
 console.log(newCar);
@@ -37,6 +38,7 @@ const updateCheckEngine = function(newCar){
     checkEngine.classList.add('hidden');
     if(newCar.engineHealth < 80){
         checkEngine.classList.toggle('hidden');
+        body.dispatchEvent(warnEvent);
     }
 }
 
@@ -58,3 +60,5 @@ const updateAlternatorLight= function(newCar){
         altLight.classList.toggle('hidden');
     }
 }
+
+document.body.addEventListener('keydown', logKey);
