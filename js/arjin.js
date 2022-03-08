@@ -16,14 +16,14 @@ function pimpMyRide(){
     const radio = document.createElement("section")
     radio.innerHTML = `
     <div class="radio">
-        <audio class="radio__player" src="https://audiohub.com/testfile/hands-up-for-summer" controls preload> </audio>
+        <audio class="radio__player" src="https://audiohub.com/testfile/got-it" controls preload> </audio>
     </div>`
     car.appendChild(radio);
     const style = document.createElement('style');
         style.innerHTML =
 	    '.container {' +
         'background-color: #0a0004;'+
-        'background-image: url("https://www.transparenttextures.com/patterns/leather.png");'+       
+        'background-image: url("https://previews.123rf.com/images/sashkin7/sashkin71705/sashkin7170500048/78411991-pcb-electr%C3%B3nico-de-alta-tecnolog%C3%ADa-placa-de-circuito-impreso-con-procesador-y-microchips-3d-ilustrac.jpg");'+       
 	    '}';
 
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
